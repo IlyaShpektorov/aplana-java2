@@ -31,30 +31,30 @@ public class Task2 {
         System.out.println("Введите второе число:");
         float b = in.nextFloat();
 
-        while (true) {
+      loop:  while (true) {
 //      Здесь мы выбираем тип операции
         System.out.println("Выберите математическую операцию ( +, -, *, / ):");
         String c = in.next();
 
 //      Здесь мы получаем ответ с 4 символами после запятой
-        if (c.equals ("+" )){
-            System.out.printf("Результат сложения: %.4f", (a + b));
-            break;
-        }else if (c.equals ("-" )){
+       
+        switch (c) {
+        case  ("+"):
+        	 System.out.printf("Результат сложения: %.4f", (a + b));
+        	break loop;
+        case ("-"):
             System.out.printf("Результат вычитания: %.4f", (a - b));
-            break;
-        }else if (c.equals  ("*" )){
+        	break loop;
+        case ("*"):
             System.out.printf("Результат умножения: %.4f", (a * b));
-            break;
-        }else if (c.equals ("/" )) {
+        	break loop;
+        case ("/"):
             System.out.printf("Результат деления: %.4f", (a / b));
-            break;
-        }else {
+        	break loop;
+        default:
         	System.out.println("Данная операция не поддерживается.");
-        }  
-        
+        	break;          
+        } 
 	}
-        in.close();    
-	}
-	
-}
+        in.close(); 	
+}}
