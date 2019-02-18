@@ -24,13 +24,12 @@ public class Task3 {
 		System.out.println("”кажите операцию \n" +
                 "если 1 - режим калькул€тора,\n"+
                 "если 2 - режим поиска MAX значени€ в массиве, \n");
-		int operation = in.nextInt();
-		in.close();
-		
+		int operation = in.nextInt();	
 		switch (operation) { 
 		case (1): calc.calculate();break;	
 		case (2): calc.findMaxMassive();break;	
 		default: System.out.println("–ежим не установлен");
+		in.close();
 		}
 	}
 
