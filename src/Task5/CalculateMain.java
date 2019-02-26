@@ -11,18 +11,18 @@ public class CalculateMain {
 	        Operation operation;
 
 	        Scanner scanner = new Scanner(System.in);
-	        System.out.println("Введите первое число:");
+	        System.out.println("Р’РІРµРґРёС‚Рµ РїРµСЂРІРѕРµ С‡РёСЃР»Рѕ:");
 	        leftOperand = new Operand(scanner.nextDouble());
 
-	        System.out.println("Введите второе число:");
+	        System.out.println("Р’РІРµРґРёС‚Рµ РІС‚РѕСЂРѕРµ С‡РёСЃР»Рѕ:");
 	        rightOperand = new Operand(scanner.nextDouble());
 	        
-	        System.out.println("Выберите математическую операцию ( +, -, *, / ):");
+	        System.out.println("Р’С‹Р±РµСЂРёС‚Рµ РјР°С‚РµРјР°С‚РёС‡РµСЃРєСѓСЋ РѕРїРµСЂР°С†РёСЋ ( +, -, *, / ):");
 	        operation = Operation.getBySymbol(scanner.next().charAt(0));
 
 	        Logic calc = new Logic(leftOperand, rightOperand, operation);
 
-	        System.out.println("Результат вычислений: " + calc.getResult());
+	        System.out.println("Р РµР·СѓР»СЊС‚Р°С‚ РІС‹С‡РёСЃР»РµРЅРёР№: " + calc.getResult());
 
 	        scanner.close();
 			}

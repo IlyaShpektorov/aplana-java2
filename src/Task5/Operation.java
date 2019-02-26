@@ -1,5 +1,7 @@
 package Task5;
-
+/**
+ *  Класс описывает возможные операции калькулятора 
+ */
 public enum Operation {
     ADDITION('+'),
     SUBTRACTION('-'),
