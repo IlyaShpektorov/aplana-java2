@@ -4,6 +4,15 @@ import java.util.Scanner;
 
 import Task2.Task2;
 
+/**
+ * Simple calculator
+ * Created by Ilya Shpektorov 
+ * 
+ * Задание: Реализовать калькулятор в стиле ООП. 
+ * Архитектуру приложения продумать самостоятельно.
+ * 
+ */
+
 public class CalculateMain {
 
 	public static void main(String[] args) {
